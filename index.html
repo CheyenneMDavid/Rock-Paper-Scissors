@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,38 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
-<body>
-<h1>Rock ~ Paper ~ Scissors</h1>
-<h2>Make Your Choice!</h2>
 
-<div>
-    <div>
-        <div><button>Rock</button></div>
-        <div><button>Paper</button></div>
-        <div><button>Scissors</button></div>
+<body>
+    <h1>Rock ~ Paper ~ Scissors</h1>
+    <h2>Make Your Choice!</h2>
+    <div class="game-screen">
+        <div class="button-choice">
+            <div><button><img src="assets/images/rock.webp" alt="rock picture">Rock</button></div>
+            <div><button><img src="assets/images/paper.webp" alt="paper picture">Paper</button></div>
+            <div><button><img src="assets/images/scissors.webp" alt="scissors picture">Scissors</button></div>
+        </div>
+        <div class="player-container">
+            <div>
+                <hr>
+                <p>Machine Score</p>
+                <p>"<span>0</span>"</p>
+                <hr>
+            </div>
+            <div>
+                <img src="assets/images/rps.webp" alt="rock paper scissors graphics">
+            </div>
+            <div>
+                <hr>
+                <p>Human Score</p>
+                <p>"<span>0</span>"</p>
+                <hr>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div><button>STOP</button></div>
     </div>
-    <div>
-        <div>Human Score</div>
-        <div>img</div>
-        <div>Computer Score</div>
-    </div>
-    <div><button>STOP</button></div>
-</div>
 
 
 
@@ -32,4 +48,5 @@
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
