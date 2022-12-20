@@ -15,17 +15,15 @@
 
     <div class="game">
         <div class="rps-choice">
-            <div><button class="button"><img src="assets/images/rock.webp" alt="rock picture"
-                        style="width: 100%">Rock</button>
-            </div>
-            <div><button class="button"><img src="assets/images/paper.webp" alt="paper picture"
+            <div><button data-type="paper" class="button"><img src="assets/images/rock.webp" alt="rock picture"
+                        style="width: 100%">Rock</button></div>
+
+            <div><button data-type="paper" class="button"><img src="assets/images/paper.webp" alt="paper picture"
                         style="width: 100%">Paper</button></div>
-            <div><button class="button"><img src="assets/images/scissors.webp" alt="scissors picture"
-                        style="width: 100%">Scissors</button>
-            </div>
+
+            <div><button data-type="scissors" class="button"><img src="assets/images/scissors.webp" alt="scissors picture"
+                        style="width: 100%">Scissors</button></div>
         </div>
-
-
         <div class="players">
             <div class="left">
                 <hr>
@@ -42,17 +40,10 @@
                 <p>"<span>0</span>"</p>
                 <hr>
             </div>
-
         </div>
-        <div><button>STOP</button></div>
+        <div><button data-type="stop">STOP</button></div>
     </div>
     </div>
-
-
-
-
-
-
     <script src="assets/js/script.js"></script>
 </body>
 
