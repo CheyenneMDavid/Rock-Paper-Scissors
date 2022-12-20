@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+h2 {
+
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.game {
+    display: inline-block;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    background-color: thistle;
+    border: 1px solid blue;
+}
+
+.rps-choice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: thistle;
+}
+
+.button {
+    background: none;
+    border: 0;
+    padding: 5px;
+}
