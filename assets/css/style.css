@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    background-color: gray;
 }
 
 h1 {
@@ -22,6 +23,7 @@ h2 {
     padding: 10px;
     background-color: thistle;
     border: 1px solid blue;
+    border-radius: 10%;
 }
 
 .rps-choice {
@@ -54,3 +56,4 @@ h2 {
 .right {
     width: 33.33%;
 }
+
