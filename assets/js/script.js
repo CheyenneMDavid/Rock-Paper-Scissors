@@ -4,7 +4,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
 
-    
+
     let userChoice = ""
 
 
@@ -12,21 +12,25 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
 
             if (this.getAttribute("data-type") === "rock") {
-                // userChoice = rock;
-                alert("you clicked ROCK.")
+
                 checkWinner()
             } else if (this.getAttribute("data-type") === "paper") {
-                // userChoice = paper;
-                alert("You clicked PAPER.")
+
                 checkWinner()
             } else if (this.getAttribute("data-type") === "scissors") {
-                // userChoice = scissors;
-                alert("You clicked SCISSORS.")
+
                 checkWinner()
             } else if (this.getAttribute("data-type") === "stop") {
-                alert("You clicked STOP")
+
                 finish()
             }
         })
     }
 })
+
+
+function computerChooses() {
+    let rpsChoices = ['Rock', 'Paper', 'Scissors']
+    let computerChoice = rpsChoices[Math.floor(Math.random() * 3)]
+    return computerChoice
+}
