@@ -60,7 +60,6 @@ function checkWinner() {
 function incrementUserScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
-    gameCount()
 }
 
 // Increment functions borrowed from the walkthrough project.
@@ -68,11 +67,10 @@ function incrementComputerScore() {
 
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
-    gameCount()
 }
 
 
-// Loop to play five games before stopping
+// Loop to play five games before stop
 function gameCount() {
 
     for (let i = 0; i < 5; i++) {
