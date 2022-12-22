@@ -1,5 +1,6 @@
 // Wait for the DOM to finish loading before running the game
-// Get the button elements and add event listeners to them
+// Get the button elements and add event listeners to them.
+
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
     for (let button of buttons) {
@@ -7,15 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
             let computerChoice = computerChooses();
             if (this.getAttribute("data-type") === "rock") {
                 userChoice = "rock"
-
                 checkWinner(computerChoice);
             } else if (this.getAttribute("data-type") === "paper") {
                 userChoice = "paper"
-
                 checkWinner(computerChoice);
             } else if (this.getAttribute("data-type") === "scissors") {
                 userChoice = "scissors"
-
                 checkWinner(computerChoice);
             } else if (this.getAttribute("data-type") === "stop") {
                 finish()
@@ -24,17 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 })
 
-
-
-
 function computerChooses() {
     let computerChoice = ["rock", "paper", "scissors"]
     let randomNumber = Math.floor(Math.random() * 3)
     return computerChoice[randomNumber]
 }
-
-
-
 
 function checkWinner(computerChoice) {
     if (userChoice === computerChoice) {
