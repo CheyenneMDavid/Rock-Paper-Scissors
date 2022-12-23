@@ -22,30 +22,38 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 })
 
+// Function to generate computer choice through use of a random number 0-2
 function computerChooses() {
     let computerChoice = ["rock", "paper", "scissors"]
     let randomNumber = Math.floor(Math.random() * 3)
     return computerChoice[randomNumber]
 }
 
+//  Function with logic to decide winner and generating alerts accordingly.
 function checkWinner(computerChoice) {
     if (userChoice === computerChoice) {
         alert("This game was a draw");
+        gameCounter();
     } else if (userChoice === "rock" && computerChoice === "scissors") {
-        alert("You win. You chose Rock and the Computer chose Scissors, which mans YOU WIN!");
+        alert("You win. You chose Rock and the Computer chose Scissors");
         incrementUserScore();
+        gameCounter();
     } else if (userChoice === "paper" && computerChoice === "rock") {
-        alert("You win. You chose Paper and the Computer chose Rock, which mans YOU WIN!");
+        alert("You win. You chose Paper and the Computer chose Rock");
         incrementUserScore();
+        gameCounter();
     } else if (userChoice === "scissors" && computerChoice === "paper") {
-        alert("You win. You chose Scissors and the Computer chose Paper.");
+        alert("You win. You chose Scissors and the Computer chose Paper");
         incrementUserScore();
+        gameCounter();
     } else {
-        incrementComputerScore()
-
-        alert(`Unlucky!  You chose "${userChoice}" and the computer choice "${computerChoice}", which means you loose!`);
+        alert(`You chose "${userChoice}" and the computer choice "${computerChoice}", which means you loose!`);
+        incrementComputerScore();
+        gameCounter();
     }
 }
+
+
 // Increment functions borrowed from the walkthrough project.
 function incrementUserScore() {
     let oldScore = parseInt(document.getElementById("user-score").innerText);
@@ -59,13 +67,34 @@ function incrementComputerScore() {
     document.getElementById("computer-score").innerText = ++oldScore;
 }
 
+// gameCount is incremented eachtime a game is played to a maximum of 5 games and then
+// calls the finish() function.  "i" is the number of games.
+function gameCounter() {
+    let gameCount = i
+    for (let i = 0; i <= 5; i++) {
+        checkWinner()
+    }
+    finish()
+}
 
-// Loop to play five games before stop
-// function gameCount() {
+//  finish() function compares user and computer scores and declares winner.
+function finish() {
+    let userFinalScore = parseInt(document.getElementById("user-score").value);
+    let computerFinalScore = parseInt(document.getElementById("computer-score").value);
 
-//     for (let i = 0; i < 5; i++) {
+    if (userFinalScore === computerFinalScore) {
+        alert("Draw!");
+        reset();
+    } else if (userFinalScore < computerFinalScore) {
+        alert("Computer wins the match");
+        reset();
+    } else {
+        alert("You Win!");
+        reset()
+    }
+}
 
-//         playGame()
-//     }
-// }
-// gameCount()
+function reset() {
+    document.getElementById("user-score").value = "0";
+    document.getElementById("computer-score").value = "0";
+}
