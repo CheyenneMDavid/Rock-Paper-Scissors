@@ -100,4 +100,5 @@ function finish() {
 function reset() {
     document.getElementById("user-score").innerText = "0";
     document.getElementById("computer-score").innerText = "0";
-}
+    window.location.reload();
+} 
