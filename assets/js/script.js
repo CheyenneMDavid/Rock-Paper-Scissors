@@ -75,7 +75,7 @@ function finish() {
     let userFinalScore = parseInt(document.getElementById("user-score").innerText);
     let computerFinalScore = parseInt(document.getElementById("computer-score").innerText);
     if (userFinalScore === computerFinalScore) {
-        alert("Draw");
+        alert("The Match is Drawn");
         reset();
     } else if (userFinalScore > computerFinalScore) {
         alert("You Win The Match");
