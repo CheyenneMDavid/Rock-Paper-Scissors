@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <title>Rock Paper Scissors</title>
 </head>
 
 <body>
     <h1>Rock ~ Paper ~ Scissors</h1>
     <h2>Make Your Choice!</h2>
-
     <div class="game">
         <div class="rps-choice">
             <div><button data-type="rock" class="button"><img src="assets/images/rock.webp" alt="rock picture"
@@ -21,14 +21,14 @@
             <div><button data-type="paper" class="button"><img src="assets/images/paper.webp" alt="paper picture"
                         style="width: 100%">Paper</button></div>
 
-            <div><button data-type="scissors" class="button"><img src="assets/images/scissors.webp" alt="scissors picture"
-                        style="width: 100%">Scissors</button></div>
+            <div><button data-type="scissors" class="button"><img src="assets/images/scissors.webp"
+                        alt="scissors picture" style="width: 100%">Scissors</button></div>
         </div>
         <div class="players">
             <div class="left">
                 <hr>
-                <p class="scores">The Computer:</p>
-                <p>"<span id="computer-score">0</span>"</p>
+                <p class="scores">Human:</p>
+                <p>"<span id="user-score">0</span>"</p>
                 <hr>
             </div>
             <div class="logo">
@@ -36,8 +36,8 @@
             </div>
             <div class="right">
                 <hr>
-                <p class="scores">Human:</p>
-                <p>"<span id="user-score">0</span>"</p>
+                <p class="scores">The Computer:</p>
+                <p>"<span id="computer-score">0</span>"</p>
                 <hr>
             </div>
         </div>
