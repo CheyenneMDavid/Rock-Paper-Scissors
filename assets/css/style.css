@@ -1,13 +1,18 @@
 body {
     text-align: center;
-    background-color: gray;
+    background-color: thistle;
     color: blue;
+}
+
+/* Header with game title */
+header main footer {
+   background-color: thistle;
+
 }
 
 h1 {
     text-align: center;
     font-size: 2rem;
-
 }
 
 h2 {
@@ -17,9 +22,9 @@ h2 {
     text-decoration: underline;
 }
 
+/* Over all game are of screen */
 .game {
     display: inline-block;
-    text-align: center;
     margin-left: 10%;
     margin-right: 10%;
     padding: 10px;
@@ -28,6 +33,7 @@ h2 {
     border-radius: 3%;
 }
 
+/* Player choice, buttons area of screen */
 .rps-choice {
     display: flex;
     align-items: center;
@@ -41,6 +47,7 @@ h2 {
     padding: 5px;
 }
 
+/* Game score section of screen */
 .players {
     display: flex;
     align-items: center;
@@ -56,4 +63,27 @@ h2 {
 
 .right {
     width: 33.33%;
+}
+
+.rules {
+    text-align: center;
+}
+
+/* Footer section of screen */
+footer {
+
+    margin: 20px;
+}
+
+/* Media queries section to enable display of different screen sizes */
+@media (max-width: 320px) {
+    .game {
+        height: 70vh;
+    }
+
+    .players {
+        width: 75%;
+        margin: 10px auto;
+    }
+
 }

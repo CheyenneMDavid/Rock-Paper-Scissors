@@ -1,4 +1,5 @@
-# Rock ~ Paper ~ Scissors
+# Rock ~ Paper ~ Scissors:
+
 Rock Paper Scissors, the simple decision making game that heralds back to the school yard and continues to be a simple decision making tool which many people everywhere have carried forward int o their adult lives.  Using "Rock Paper Scissors" to make decisions that allowed for degrees of winning and losing, all based on true sporting random chance.
 
 The game is simple to learn and easy to imitate.  The purpose of this site is to allow a graphical interface from which young players can easily pick up and understand the rules, through engaing with the computer which will never cheat.
@@ -10,19 +11,19 @@ ___
 
 ## Features:
 
-### The Title Page
+### The Title Page:
 ![](assets/images/header.webp)
 Upon the openeing, the user is greeted with the title page which makes clear the site purpose by it's head of "Rock Paper Scissors".
 
 ___
 
-### The Buttons
+### The Buttons:
 ![](assets/images/buttons.webp)
 The Buttons designated as "Rock" "Paper" and "Scissors" clear and at the forfront, using the pictures to show what they represent, however their names of rock, paper and scissors are also written underneath each of them, and the User is invited to make a choice by clicking one of the buttons.
 
 ___
 
-### Rules & Scores.
+### Rules & Scores:
 ![](assets/images/players.webp)
 Below the buttons is the are for the scores.  User to the left underr the title "Human" and "The Computer" to the right.
 The center image gices a clear and concise explanation of the rules.
@@ -44,7 +45,7 @@ The games of 3 choices and 5 choices will be kept seperate in initial choice, so
 I also would like to add the five button gamea of "Rock, Paper, Scissors, Lizard, Spock" as a an "offer" to the player after they have played the three button choice game and if they have won, 3 games on the trott.
 
 
-## Site Deployment
+## Site Deployment:
 The site was deployed to the GitGub pages here:
 
 https://github.com/CheyenneMDavid/Rock-Paper-Scissors, where it can be forked from if anyone wants to do so.
@@ -56,7 +57,7 @@ https://cheyennemdavid.github.io/Rock-Paper-Scissors/
 ___
 
 
-# Testing
+# Testing:
 I can confirm that the site has been tested with Lighthouse and hae inserted the snpshot below:
 ![](assets/images/lighthouse.webp)
 
@@ -64,9 +65,28 @@ HTML was tested through the official W3C Validator, with no errors found.
 CSS was tested through the official (Jigsaw) validator, with no errors found.
 Javascript was tested through JSHint, with no errow found.
 
+Game functionality was tested by running all aspects to see if they passed or failed as in the attached checklist:
+
+![](assets/images/game-functionality-testing.png)
+
 ___
 
+## Forking:
+A fork is a new repository that shares code and visibility settings with the original “upstream” repository. Forks are often used to iterate on ideas or changes before they are proposed back to the upstream repository, such as in open source projects or when a user does not have write access to the upstream repository. For more information, see "Working with forks."
+
+Propose changes to someone else's project
+For example, you can use forks to propose changes related to fixing a bug. Rather than logging an issue for a bug you have found, you can:
+
+* Fork the repository.
+* Make the fix.
+* Submit a pull request to the project owner.
+Use someone else's project as a starting point for your own idea.
+Open source software is based on the idea that by sharing code, we can make better, more reliable software. For more information, see the "About the Open Source Initiative" on the Open Source Initiative.
+
+
+GitHub has a great support community where you can ask for help and talk to people from around the world. Join the conversation on GitHub Community.
+___
 ## Credits:
 The image showing the rules was taken freom wikipedia whilst the buttons were redrawn by me using "pictsArt", based on images I have seen across the web in general.
 
-___
+Text on forking, copy and pasted from GitHub pages.

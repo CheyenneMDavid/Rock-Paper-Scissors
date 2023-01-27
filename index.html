@@ -11,38 +11,84 @@
 </head>
 
 <body>
-    <h1>Rock ~ Paper ~ Scissors</h1>
-    <h2>Make Your Choice!</h2>
-    <div class="game">
-        <div class="rps-choice">
-            <div><button data-type="rock" class="button"><img src="assets/images/rock.webp" alt="rock picture"
-                        style="width: 100%">Rock</button></div>
+    <!-- Header Introducing the game, by way of the title -->
+    <Header>
+        <h1>Rock ~ Paper ~ Scissors</h1>
+    </Header>
 
-            <div><button data-type="paper" class="button"><img src="assets/images/paper.webp" alt="paper picture"
-                        style="width: 100%">Paper</button></div>
+    <main>
+        <!-- Main game are containing players choices and scores -->
+        <h2>Make Your Choice!</h2>
+        <div class="game">
 
-            <div><button data-type="scissors" class="button"><img src="assets/images/scissors.webp"
-                        alt="scissors picture" style="width: 100%">Scissors</button></div>
+            <!-- Buttons for player choice of rock, paper or scissors -->
+            <div class="rps-choice">
+                <!-- Button for rock choice by user -->
+                <div><button data-type="rock" class="button"><img src="assets/images/rock.webp" alt="rock picture"
+                            style="width: 100%">Rock</button></div>
+                <!-- Button for paper choice by user -->
+                <div><button data-type="paper" class="button"><img src="assets/images/paper.webp" alt="paper picture"
+                            style="width: 100%">Paper</button></div>
+                <!-- Button for paper choice by user -->
+                <div><button data-type="scissors" class="button"><img src="assets/images/scissors.webp"
+                            alt="scissors picture" style="width: 100%">Scissors</button></div>
+            </div>
+
+            <!-- Section containing players scores to left in game screen, computer to the right in game screen,
+                and game logo which provides a visual representation of the game rules. -->
+            <div class="players">
+
+                <!-- User score -->
+                <div class="left">
+                    <hr>
+                    <p class="scores">Human:</p>
+                    <p>"<span id="user-score">0</span>"</p>
+                    <hr>
+                </div>
+
+                <!-- Game logo giving visual representation of game rules -->
+                <div class="logo">
+                    <img src="assets/images/rps.webp" alt="rock paper scissors graphics" style="width: 100%">
+                </div>
+                <!-- Computer score -->
+                <div class="right">
+                    <hr>
+                    <p class="scores">The Computer:</p>
+                    <p>"<span id="computer-score">0</span>"</p>
+                    <hr>
+                </div>
+            </div>
+
+            <!-- Button to stop the game early, which will also produce the score to that point -->
+            <div><button data-type="stop">STOP</button></div>
+
+            <!-- Straight forward declaration of the rules governing the game of Rock, Paper and Scissors -->
+            <div class="rules">
+                <p>
+                    <span style="text-decoration:underline">Rules of the game.!</span>
+                </p>
+                <p>
+                    Rock Smashes Scissor.!
+                </p>
+                <p>
+                    Scissors Cut Paper.!
+                </p>
+                <p>
+                    Paper Wraps Over Rock.!
+                </p>
+            </div>
         </div>
-        <div class="players">
-            <div class="left">
-                <hr>
-                <p class="scores">Human:</p>
-                <p>"<span id="user-score">0</span>"</p>
-                <hr>
-            </div>
-            <div class="logo">
-                <img src="assets/images/rps.webp" alt="rock paper scissors graphics" style="width: 100%">
-            </div>
-            <div class="right">
-                <hr>
-                <p class="scores">The Computer:</p>
-                <p>"<span id="computer-score">0</span>"</p>
-                <hr>
-            </div>
-        </div>
-        <div><button data-type="stop">STOP</button></div>
-    </div>
+    </main>
+
+    <!-- Footer section, with a promise of more to come in future as site is further devolped -->
+    <footer>
+        <p>
+            <span style="text-decoration:underline">Coming soon</span>
+        </p>
+        <p>
+            - Rock - Paper - Scissors - Lizard - Spock -
+        </p>
+    </footer>
     <script src="assets/js/script.js"></script>
 </body>
 
